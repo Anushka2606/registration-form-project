@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registraion Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+    <div class="container">
+      <div class="small">
+      <h1 id="title">Registraion Form</h1> 
+      <p id="description" >Please fill out this form with the required information<p> 
+        <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+       <label id="name-label" for="first-name">Enter Your First Name: <input placeholder="first name" type="text" id="name" name="first-name" required /></label>
+       <label  for="last-name">Enter Your Last Name: <input placeholder="last name" type="text" id="last-name" name="last-name" required /></label>
+       <label id="email-label" for="email">Enter Your Email: <input placeholder="email" type="email" id="email" name="email" required /></label>
+       <label id="number-label">Phone No. :<input placeholder="phone no."id="number" type="number" min="10" max="10"/></label>
+       <label  for="new-password">Create a New Password: <input placeholder="password" type="password" pattern="[a-z0-5]{8,}" name="new-password" required /></label>
+       </fieldset>
+       <fieldset>
+         <lagend>Account type (required)</lagend>
+         <label ><input class="inline" type="radio" id="personal-account" name="account-type" value="value">Personal</label>
+         <label ><input class="inline" type="radio" id="business-account" name="account-type" value="value">Business</label>
+         </fieldset>
+         <fieldset>
+           <label>Upload a profile picture: <input type="file"></input></label>
+           <label >Input your age (years): <input type="number" max="120" min="13" ></input>
+           <label >How did you hear about us? <select id="dropdown">
+             <option value="">(Select one)</option>
+             <option value="1">freeCodeCamp News</option>
+             <option value="2">freeCodeCamp You Tube Channel</option>
+             <option value="3">freeCodeCamp Forum</option>
+             <option value="4">Other</option>
+           </select>
+           <label for="bio">Provide a bio: <textarea placeholder="I like coding on the beach..." rows="3" cols="30"></textarea>
+          <label> <input value="value" class="inline" type="checkbox"> i have filled all the required information</label>
+            <input value="value"class="inline" type="checkbox"> I accept the <a href="http://www.google.com">terms and conditions</a>
+         <input type="submit" id="submit" value="Submit"/>
+         </fieldset>
+         </form>
+        </div>
+        </div>
+</body>
+</html>
